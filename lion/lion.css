@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+
+#content-wrapper{
+    width: 90%;
+    margin: auto;
+}
+
+
+/* insert code for header and navigation here, and container-nav-main */
+header{background-color: rgba(255, 255, 255, .8)}
+
+
+
+
+#container-nav-main{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+}
+
+
+nav{
+    width:20%;
+    margin: 0;
+    background-color: #9EB8D9; /* change color!!! */
+    padding:2%;
+}
+main{
+    width:80%;
+}
+
+#main-image-and-title{
+    background-image: url("src/lion-main-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 60vh;
+    border-radius: 15px;
+}
+
+#page-title{
+    color: white;
+    font-size: calc(20px + 4vh);
+    padding-left: 3%;
+    padding-bottom: 3%;
+}
+
+#title-and-facts{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+
+#fun-fact-group{
+    margin: 0;
+    padding-left: 3%;
+    padding-bottom:3%;
+}
+
+#fun-fact-group ul{
+    List-style: none;
+    Padding-left: 0;
+}
+
+/*Code to make the translucent boxes opaque when hovered over*/
+.fun-fact{
+    transition: 0.6s ease;
+    display: inline;
+    padding: 1%;
+    margin-left: 0;
+    margin-right: 1vw;
+    font-size: calc(5px + 1vw);
+    background-color: rgba(255, 255, 255, 0.7);
+    position: relative;
+}
+.fun-fact:hover{
+    border: solid;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/*Code to make fact popups appear*/
+.fun-fact .fact-popup {
+    opacity: 0;
+    transition: 0.3s ease;
+    width: 150%;
+    background-color: rgba(5, 5, 5, 0.7);
+    color: #FFF;
+    text-align: center;
+    padding: 1vw 0;
+    border-radius: 1vw;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -75%;
+}
+.fun-fact:hover .fact-popup{
+    opacity: 1;
+}
+.fun-fact .fact-popup::after{
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+/*Code to make the nav items light up when hovered over.*/
+nav ul li {
+    transition-duration: 0.4s;
+    margin: 3vh 0;
+}
+nav ul li:hover{
+    background-color: #D9BFA6;
+}
+
+
+#info{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+}
+
+
+#info-left{
+    width:60%;
+    background-color: rgba(255, 255, 255, .6);
+}
+
+
+.info-section{
+    padding: calc(5px + 5%)
+}
+
+
+#info-right{
+    background-color: beige;
+    width:40%;
+}
+
+
+#info-right img{
+    max-width: 100%;
+    padding: 5% 5% 0 5%;
+}
+
+
+#info-right p{
+    font-size: calc(2px + 1vh);
+    text-align: center;
+}

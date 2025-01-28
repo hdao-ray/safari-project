@@ -1,0 +1,220 @@
+*{
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Poppins, sans-serif;
+}
+
+
+
+
+#page-wrapper {
+   width: 90%;
+   margin: auto;
+   font-family: Poppins, sans-serif;
+}
+
+
+header{
+   position: relative;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 10vh;
+   color:#9A9483;
+}
+
+
+header h1{
+   position: absolute;
+   left: 0;
+   bottom: 2vh;
+   font-size: calc(30px + 2%);
+}
+
+
+main {
+   width: 100%;
+}
+
+
+
+
+.overlay {
+   height: 0;
+   width: 100%;
+   position: fixed;
+   z-index:1;
+   left: 0;
+   top: 0;
+   background-color: #9A9483;
+   opacity: .95;
+   overflow-y: hidden;
+   transition: 0.4s;
+}
+
+
+
+
+#overlay-content {
+   position: relative;
+   top: 20%;
+   width: 100%;
+   text-align: center;
+   margin-top: 15%;
+}
+
+
+
+
+#open-nav {
+   position: absolute;
+   font-size: calc(5px + 1vw);
+   right: 1%;
+   color: #433E35;
+   bottom:2vh;
+}
+
+
+
+
+#close-button {
+   position: absolute;
+   top: 5%;
+   right: 2%;
+   font-size: calc(20px + 1vw);
+   color: black;
+}
+
+
+
+
+.nav-a {
+   list-style: none;
+}
+
+
+
+
+nav a {
+   text-decoration: none;
+   display: block;
+   transition: 0.3s;
+   padding: 1% 0;
+   color: white;
+   font-size: calc(15px + 1vw);
+}
+
+
+.nav-a {
+   list-style: none;
+}
+
+
+nav a {
+   text-decoration: none;
+   display: block;
+   transition: 0.3s;
+   padding: 1% 0;
+   color: white;
+   font-size: calc(15px + 1vw);
+}
+nav ul li {
+   transition-duration: 0.1s;
+   margin: 3vh 0;
+}
+nav ul li:hover{
+   text-shadow: 2px 3px 3px black;
+}
+
+
+main {
+   width: 100%;
+}
+
+
+.picture{
+   width: 100%;
+   height: 35vh;
+   position: relative;
+   padding: 0 5%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+
+   background-image: url("src/savannah.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+
+
+   border-radius:15px;
+}
+
+
+.content{
+   text-align: center;
+}
+
+
+.content h1{
+   color: white;
+   font-size: calc(35px + 1vh);
+}
+
+
+.credits{
+   margin: 5vh 0;
+
+
+}
+main h4{
+   font-size: calc(16px + 10%);
+   text-align: center;
+   margin: 5vh 0;
+   font-weight: lighter;
+}
+main p{
+   font-size: calc(12px + 10%);
+   text-align: center;
+   margin: 1vh 0;
+   color: #433E35
+}
+
+
+main a{
+
+
+   font-size: calc(12px + 10%);
+   color: #433E35
+}
+
+
+main h5{
+   font-size: calc(13px + 10%);
+   text-align: center;
+   margin: 3vh 0;
+   color: #433E35;
+   font-weight: lighter;
+}
+footer{
+   margin: 3vh;
+   text-align: center;
+}
+footer p{
+   color:#9A9483;
+   font-size: calc(10px + 5%);
+}
+
+
+footer a{
+   text-decoration: none;
+   color:#9A9483;
+   font-size: calc(10px + 5%);
+   font-weight: bold;
+}
+
+
+
+
+
